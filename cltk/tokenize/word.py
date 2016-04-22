@@ -221,7 +221,7 @@ def nltk_tokenize_words(string, attached_period=False, language=None):
     object. Maybe integrate with WordTokenizer.
     """
     assert isinstance(string, str), "Incoming string must be type str."
-    if language=='sanskrit': 
+    if language=='sanskrit' or language=='hindi': 
         periods = ['.', '।','॥']
     else:
         periods = ['.']
